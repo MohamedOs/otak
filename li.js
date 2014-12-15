@@ -18,7 +18,7 @@ var handler = new htmlparser.DefaultHandler(function(err, dom) {
         vars.img=select(dom,'.loop-post img'); 
         //Ti.API.info(vars.img[0].attribs.src); 
         for(var i=0;i<vars.data.length;i++){
-        	var tTitle=vars.data[0].children[1].children[0].data;
+        	var tTitle=vars.data[i].children[1].children[0].data;
         	tTitle=tTitle.replace(/\s+/g,' ').trim();
         	arr.push({
         	title:tTitle,
