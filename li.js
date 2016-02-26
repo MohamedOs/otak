@@ -40,6 +40,7 @@ xhr.onerror = function() {
 Titanium.API.info('error');
 };
 var queryIndexCat=link;
-xhr.open("GET",queryIndexCat);
+//xhr.open("GET",queryIndexCat);
+xhr.open("GET","https://raw.githubusercontent.com/MohamedOs/chanel/master/anime.html");
 xhr.send();
 }
