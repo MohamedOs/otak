@@ -16,7 +16,8 @@ vars.data=select(dom,'h2');
 //vars.des=select(dom,'.loop-post-content.clearfix');
 //Ti.API.info(vars.des.length);
 //Ti.API.info(vars.des[0].children[0].data);
-vars.img=select(dom,'.crop9 img');
+//vars.img=select(dom,'.crop9 img');
+vars.img=null;
 //Ti.API.info(vars.img[0].attribs.src);
 for(var i=0;i<vars.data.length;i++){
 var tTitle=vars.data[i].children[1].children[0].data;
@@ -25,7 +26,8 @@ arr.push({
 title:tTitle,
 link:vars.data[i].children[1].attribs.href,
 //des:vars.des[i].children[0].data,
-image:vars.img[i].attribs.src
+image:"https://s-media-cache-ak0.pinimg.com/236x/d2/4e/1d/d24e1dedce0ec8a88755a27db10ea01b.jpg"
+//image:vars.img[i].attribs.src
 });
 }
  Ti.API.info(arr.length);
